@@ -99,9 +99,9 @@ if __name__ == '__main__':
     #Phase 2 : Secret Reconstruction
     # Picking t shares randomly for reconstruction
 
-    pool = random.sample(shares,t)
-    print(f'Combining shares : {", ".join(str(share) for share in pool)}')
-    print(f'Reconstructed secret: {reconstruct_secret(pool)}')
+    pools = random.sample(shares,t)
+    print(f'Combining shares : {", ".join(str(share) for share in pools)}')
+    print(f'Reconstructed secret: {reconstruct_secret(pools)}')
 
 
 
